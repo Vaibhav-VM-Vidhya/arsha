@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Rudraksha Welfare Foundation</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+
+    <!-- extra sainath -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.1/css/bootstrap-utilities.rtl.min.css"
+      integrity="sha512-gZkxis3omp82ModtP2XWqVg8X6BEsAFd7r+i0v6iYAl9gKXKQ03BSOEVWQizgW6Gvo+rkJJGdbjocGvitsAxMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"
+    />
+    <!-- component -->
+    <link
+      rel="stylesheet"
+      href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+
+    <!-- end -->
+
+    <!-- stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap");
+
+      .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .swiper-slide {
+        width: 300px;
+        height: 400px;
+        /* box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); */
+        filter: blur(1px);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: self-start;
+      }
+
+      .swiper-slide-active {
+        filter: blur(0px);
+      }
+
+      .swiper-slide span {
+        text-transform: uppercase;
+        color: #fff;
+        background: #1b7402;
+        padding: 7px 18px 7px 25px;
+        display: inline-block;
+        border-radius: 0 20px 20px 0px;
+        letter-spacing: 2px;
+        font-size: 0.8rem;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .swiper-slide--one span {
+        background: #62667f;
+      }
+
+      .swiper-slide--two span {
+        background: #087ac4;
+      }
+
+      .swiper-slide--three span {
+        background: #b45205;
+      }
+
+      .swiper-slide--four span {
+        background: #087ac4;
+      }
+
+      .swiper-slide h2 {
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 1.4;
+        margin-bottom: 15px;
+        padding: 25px 45px 0 25px;
+      }
+
+      .swiper-slide p {
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        padding: 0 25px 35px 25px;
+      }
+
+      .swiper-slide svg {
+        color: #fff;
+        width: 22px;
+        height: 22px;
+        margin-right: 7px;
+      }
+
+      .swiper-slide--one {
+        background: url("/images/interns/intern1.jpg") no-repeat 50% 50% / cover;
+      }
+
+      .swiper-slide--two {
+        background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+          url("/images/interns/intern2.jpg") no-repeat 50% 50% / cover;
+      }
+
+      .swiper-slide--three {
+        background: url("/images/interns/intern3.jpg") no-repeat 50% 50% / cover;
+      }
+
+      .swiper-slide--four {
+        background:
+         /* linear-gradient(to top, #0f2027, #203a4300, #2c536400), */ url("/images/interns/intern4.jpg")
+          no-repeat 50% 50% / cover;
+      }
+
+      .swiper-slide--five {
+        background: url("/images/interns/intern5.jpg") no-repeat 50% 50% / cover;
+      }
+
+      .swiper-3d .swiper-slide-shadow-left,
+      .swiper-3d .swiper-slide-shadow-right {
+        background-image: none;
+      }
+
+      .rudra-logo {
+        width: 50%;
+        height: auto;
+      }
+      .cards-wrapper {
+        display: flex;
+        justify-content: center;
+      }
+      .card img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .card {
+        margin: 0 0.5em;
+        box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+        border: none;
+        border-radius: 0;
+      }
+      .carousel-inner {
+        padding: 1em;
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        background-color: #e1e1e1;
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      @media (min-width: 768px) {
+        .card img {
+          height: 11em;
+        }
+      }
+    </style>
+
+    <!-- =======================================================
+<script src="https://cdn.tailwindcss.com"></script>
+  ======================================================== -->
+  </head>
+
+  <body>
+    <script></script>
+    <div>
+      <img
+        src="images/header1.jpg"
+        style="width: 100%; height: auto"
+        alt="Nature"
+        class="responsive"
+      />
+      <img
+        src="images/header2.jpeg"
+        style="width: 100%; height: auto"
+        alt="Nature"
+        class="responsive"
+      />
+    </div>
+
+    <!-- ======= Header ======= -->
+    <header style="background-color: #3d4d6a" id="header" class="sticky-top">
+      <div class="container d-flex align-items-center">
+        <h1 class="logo me-auto">
+          <a href="index.html" style="font-size: 20px"
+            >RUDRAKSHA WELFARE Foundation</a
+          >
+        </h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About us</a></li>
+            <li><a class="nav-link scrollto" href="#services">Agenda</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#portfolio">Core Values</a>
+            </li>
+            <li><a class="nav-link scrollto" href="#team">Mission</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Project</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="#">1. Art,Literature,Culture & Religion</a></li>
+                <!-- <li class="dropdown">
+                  <a href="#"
+                    ><span>Deep Drop Down</span>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li> -->
+                <li><a href="#">2. Blood Donation</a></li>
+                <li><a href="#">3. Drug De-Addiction</a></li>
+                <li><a href="#">4. Environment Armour</a></li>
+                <li><a href="#">5. Gender Justice</a></li>
+                <li><a href="#">6. Gracious Justice</a></li>
+                <li><a href="#">7. Human Rights</a></li>
+                <li><a href="#">8. Old Age,Orphanage & Blind Home</a></li>
+                <li><a href="#">9. Sports Training Support</a></li>
+                <li><a href="#">10. True Eternal Warriors</a></li>
+                <li><a href="#">11. Training and Skill Enhancement</a></li>
+                <li><a href="#">12. True Wisdom Devotees</a></li>
+                <li><a href="#">13. Vigour and Vitality</a></li>
+                <li><a href="#">14. Voiceless Souls Protection</a></li>
+                <li><a href="#">15. Woman Empowerment</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#"
+                ><span>Organiogram</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="#">Organinogram</a></li>
+                <!-- <li class="dropdown">
+                  <a href="#"
+                    ><span>Deep Drop Down</span>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li> -->
+                <li><a href="#">Management</a></li>
+                <li><a href="#">Code of conduct</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#"
+                ><span>Know More</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Career</span> <i class="bi bi-chevron-right"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">Recruitments</a></li>
+                    <li><a href="#">Interview Form</a></li>
+                    <li><a href="#">Joining Form</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Login</span> <i class="bi bi-chevron-right"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">Numero </a></li>
+                    <li><a href="#">Employee</a></li>
+                    <li><a href="#">RMS</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">CRM</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+              </ul>
+            </li>
+
+            <!-- <li><a class="nav-link scrollto" href="#contact">Know more</a></li> -->
+            <li>
+              <a class="getstarted scrollto" href="#about">Contact Us</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+  
+
+    <main id="main">
+     
+
+  
+
+
+
+
+   
+
+  
+
+ 
+
+    
+
+
+
+     
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+    x <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>Rudraksha Welfare foundation</h3>
+              <p>
+                Office No. 754, Cabin No. 9, First Floor, Mohalla Dehra
+                Sahib,Near NAC Manimajra Chandigarh, UT:160101
+                <br /><br />
+                <strong>Phone:</strong> +1 5589 55488 55<br />
+                <strong>Email:</strong> info@example.com<br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Mission</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Survey</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">FAQ</a></li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Project</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Organiogram</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Refund Policy</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">CRM</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Rudraksha Welfare Foundation</h4>
+              <p>
+                A Section 8 Company (Non Profit Organization) under Companies
+                Act 2013, Ministry of Corporate Affairs, Govt. of INDIA.
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>2022 RUDRAKSHA</span></strong> - All
+          rights reserved.
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+          Designed by
+          <a href="https://bootstrapmade.com/">Vaibhav and Sainath</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- bootstrap template -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
